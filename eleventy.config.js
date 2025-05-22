@@ -59,7 +59,7 @@ export default async function(eleventyConfig) {
 			language: "en",
 			title: "Short Stories",
 			subtitle: "A collection of short stories built with 11ty",
-			base: "https://example.com/",
+			base: "https://lukegalbraithrussell.github.io/stories/",
 			author: {
 				name: "Luke"
 			}
