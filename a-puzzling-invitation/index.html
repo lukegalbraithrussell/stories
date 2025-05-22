@@ -1,0 +1,319 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><script>(function() {var savedMode = localStorage.getItem('preferredMode');if (savedMode === 'dark' || (!savedMode && window.matchMedia('(prefers-color-scheme:dark)').matches)) {document.documentElement.classList.add('dark-mode');}document.documentElement.style.visibility = 'hidden';})();</script><title>A puzzling invitation</title><meta content="A puzzling invitation" property="og:title"><meta content="A puzzling invitation" name="twitter:title"><meta content="A puzzling invitation" name="title"><meta content="A puzzling invitation" property="og:site_name"><meta content="" name="description"><meta content="" property="facebook:description"><meta content="" property="og:description"><meta content="" name="twitter:description"><meta property="twitter:card" content="summary_large_image"><meta content="" name="twitter:image"><meta content="" name="facebook:image"><meta content="" name="og:image"><link href="/stories/logos.png" rel="icon" type="image/x-icon"><link rel="apple-touch-icon" href="/stories/logos.png"><meta content="" property="facebook:author"><meta content="" property="twitter:author"><meta content="" name="twitter:site"><meta property="og:type" content="website"><link rel="canonical" href="/stories/a-puzzling-invitation/"><link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="tiny fiction"><meta name="language" content="en"><meta name="locale" content="en_US"><meta property="og:locale" content="en_US"><meta name="generator" content="Eleventy v3.1.0"><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","description":"","headline":"tiny fiction - ","name":"tiny fiction","url":"/a-puzzling-invitation/"}</script><style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+}
+
+body {
+    font-family: 'Cutive Mono', monospace;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+    letter-spacing: 0.01em;
+}
+
+.light-mode {
+    background-color: #fcf1de;
+    color: #000000;
+}
+
+.dark-mode {
+    background-color: #202020;
+    color: #ffffff;
+}
+
+header {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: currentColor;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+article {
+    border: 2px solid currentColor;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.meta {
+    font-size: 0.9em;
+    margin-bottom: 1rem;
+}
+
+.tags {
+    margin-top: 2rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    margin-right: 0.5rem;
+    border: 2px solid currentColor;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.navigation a {
+    padding: 0.5rem 1rem;
+    border: 2px solid currentColor;
+    text-decoration: none;
+    color: currentColor;
+    text-transform: uppercase;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.pagination a {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid currentColor;
+    text-decoration: none;
+    color: currentColor;
+}
+
+a {
+    color: currentColor;
+    font-weight: bold;
+}
+
+#mode-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.media-container {
+    margin: 2rem 0;
+    border: 3px solid currentColor;
+    padding: 1rem;
+}
+
+.media-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.media-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+}
+
+.caption {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    display: block;
+    padding-bottom: 15px;
+    font-size: 12px;
+}</style><link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet"></head><body><style>.skip-to-content{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.skip-to-content:focus{position:fixed;top:0;left:0;width:auto;height:auto;padding:10px;margin:0;overflow:visible;clip:auto;white-space:normal;background-color:#f0f0f0;color:#000;z-index:9999}.dark-mode .skip-to-content:focus{background-color:#333;color:#fff}</style><a href="#main-content" aria-label="Read Content Article" class="skip-to-content">Skip to content</a><header><nav><ul></ul></nav></header><button aria-label="dark light mode" id="mode-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightning-charge-fill" viewBox="0 0 16 16"><path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"></path><title>Dark Light Mode</title></svg></button><main aria-label="Content Article Main" id="main-content"><article><h1 id="a-puzzling-invitation">A puzzling invitation</h1><h2></h2><div class="meta"><p><span>By Luke Galbraith</span><span> | </span><span><time datetime="2023-10-15" aria-label="Publish Date">15 October 2023</time></span></p><p>Genre: Romance | Action: Basking | Word: A postage stamp</p><p></p></div><hr><style>img,iframe {max-width: 100%;height: auto;}</style><p>“Another puzzle solved!”</p><p>The video game console congratulated the young woman holding it. She laid back against the sofa in triumph.</p><p>She looked down at a young man dozing, his head on her thigh.</p><p>“I wish real life had more puzzles.”</p><p>Sleepily, he nodded in agreement. She smiled, stroking his hair.</p><p>---</p><p>The letter arrived a few days later. She recognized the book-shaped postage stamp. Every letter she received from him had it.</p><p>Inside she found a gold-trimmed card.</p><p><em>You are cordially invited to breakfast this Sunday. Please arrive at 10 o’clock sharp, following the instructions below.</em></p><p><em>Begin at the best cafe</em></p><p><em>Then walk through the trees</em></p><p><em>Follow the scent of Kennedy’s rose</em></p><p><em>To find me under your shadow</em></p><p>She stared at the note with excitement. A real life puzzle!</p><p>---</p><p><em>Begin at the best cafe</em></p><p>As she laid in bed Saturday night, she was still stuck on that first line. The term “best” was so subjective. But as she fell asleep, she remembered a conversation that happened last week.</p><p>He had been at the stove making pancakes.</p><p>She handed him a cup of coffee. “You don't have to cook, ya know. We could eat out.”</p><p>He took a sip. “Between your coffee and my food, this is the best cafe in town.”</p><p>“You're ridiculous.”</p><p>He gestured towards her balcony. “Besides, I already made a reservation.”</p><p>And so on Sunday morning, she set forth from her apartment.</p><p><em>Then walk through the trees</em></p><p>Once she knew where to start, that line became obvious. Leif Street began across from her apartment. She walked down it.</p><p><em>Follow the scent of Kennedy’s rose</em></p><p>Once she knew to walk down Leif Street, she knew to walk to the Kennedy running track.</p><p>She found no roses.</p><p>She climbed the bleachers and looked across the track. Below was an engraved compass rose. It pointed not North, but Northeast, supposedly towards Marathon, Greece, across the world.</p><p>Down the steps she went. Then down Layton Street, which ran Northeast.</p><p><em>To find me under your shadow</em></p><p>As she walked, she kept glancing down. There, her shadow unhelpfully followed her. She frowned.</p><p>She passed by a small park. A statue of Aphrodite stood in its center.</p><p>She paused - half amused, half horrified. He once told her she must be the reincarnation of Aphrodite. She remembered nervously laughing as he turned red.</p><p>She reached the statue as a bell tower chimed in the distance. Exactly 10:00.</p><p>The goddess cast a shadow down an alley.</p><p>Turning the corner, she came upon a quaint cafe. There, he sat at a table for two.</p><p>A waiter approached with drinks. “A cappuccino with extra foam.”</p><p>She sat down. “That’s me.”</p><p>The waiter placed the drinks down and left. They took their first sips as the morning sun came into view.</p><p>He grinned, basking in his ever-so-clever puzzle. “I heard this is the second best cafe in town.”</p><p>Likewise, she was basking in her ever-so-clever solution. “A worthy reward.”</p><p>Each basked in the presence of their person.</p></article></main><footer><p><a aria-label="Developer for this website" href="." target="_blank"></a></p></footer><script type="module" src="/stories/dist/Fq9wCXhG-6.js"></script></body></html>

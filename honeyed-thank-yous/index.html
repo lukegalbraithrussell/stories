@@ -1,0 +1,319 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><script>(function() {var savedMode = localStorage.getItem('preferredMode');if (savedMode === 'dark' || (!savedMode && window.matchMedia('(prefers-color-scheme:dark)').matches)) {document.documentElement.classList.add('dark-mode');}document.documentElement.style.visibility = 'hidden';})();</script><title>Honeyed Thank-yous</title><meta content="Honeyed Thank-yous" property="og:title"><meta content="Honeyed Thank-yous" name="twitter:title"><meta content="Honeyed Thank-yous" name="title"><meta content="Honeyed Thank-yous" property="og:site_name"><meta content="" name="description"><meta content="" property="facebook:description"><meta content="" property="og:description"><meta content="" name="twitter:description"><meta property="twitter:card" content="summary_large_image"><meta content="" name="twitter:image"><meta content="" name="facebook:image"><meta content="" name="og:image"><link href="/stories/logos.png" rel="icon" type="image/x-icon"><link rel="apple-touch-icon" href="/stories/logos.png"><meta content="" property="facebook:author"><meta content="" property="twitter:author"><meta content="" name="twitter:site"><meta property="og:type" content="website"><link rel="canonical" href="/stories/honeyed-thank-yous/"><link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="tiny fiction"><meta name="language" content="en"><meta name="locale" content="en_US"><meta property="og:locale" content="en_US"><meta name="generator" content="Eleventy v3.1.0"><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","description":"","headline":"tiny fiction - ","name":"tiny fiction","url":"/honeyed-thank-yous/"}</script><style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+}
+
+body {
+    font-family: 'Cutive Mono', monospace;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+    letter-spacing: 0.01em;
+}
+
+.light-mode {
+    background-color: #fcf1de;
+    color: #000000;
+}
+
+.dark-mode {
+    background-color: #202020;
+    color: #ffffff;
+}
+
+header {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: currentColor;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+article {
+    border: 2px solid currentColor;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.meta {
+    font-size: 0.9em;
+    margin-bottom: 1rem;
+}
+
+.tags {
+    margin-top: 2rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    margin-right: 0.5rem;
+    border: 2px solid currentColor;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.navigation a {
+    padding: 0.5rem 1rem;
+    border: 2px solid currentColor;
+    text-decoration: none;
+    color: currentColor;
+    text-transform: uppercase;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.pagination a {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid currentColor;
+    text-decoration: none;
+    color: currentColor;
+}
+
+a {
+    color: currentColor;
+    font-weight: bold;
+}
+
+#mode-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.media-container {
+    margin: 2rem 0;
+    border: 3px solid currentColor;
+    padding: 1rem;
+}
+
+.media-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.media-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+}
+
+.caption {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    display: block;
+    padding-bottom: 15px;
+    font-size: 12px;
+}</style><link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet"></head><body><style>.skip-to-content{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.skip-to-content:focus{position:fixed;top:0;left:0;width:auto;height:auto;padding:10px;margin:0;overflow:visible;clip:auto;white-space:normal;background-color:#f0f0f0;color:#000;z-index:9999}.dark-mode .skip-to-content:focus{background-color:#333;color:#fff}</style><a href="#main-content" aria-label="Read Content Article" class="skip-to-content">Skip to content</a><header><nav><ul></ul></nav></header><button aria-label="dark light mode" id="mode-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightning-charge-fill" viewBox="0 0 16 16"><path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"></path><title>Dark Light Mode</title></svg></button><main aria-label="Content Article Main" id="main-content"><article><h1 id="honeyed-thank-yous">Honeyed Thank-yous</h1><h2></h2><div class="meta"><p><span>By Luke Galbraith</span><span> | </span><span><time datetime="2025-01-19" aria-label="Publish Date">19 January 2025</time></span></p><p>Genre: Romance | Character: Basking | Object: Pancakes</p><p></p></div><hr><style>img,iframe {max-width: 100%;height: auto;}</style><p>Outside the culinary college’s entrance stood a bulletin board surrounded by students. The crowd pushed among themselves trying to see how they ranked on the midterm exam.</p><p>A young man with unkempt curls quickly found his name:</p><p><em>1. Fletcher Moore</em></p><p>He nodded, allowing himself a small smile, then turned and exited the crowd. A young woman with shoulder length black hair sat on a bench, her leg rapidly moving up and down. She was staring at him.</p><p>He recognized her, of course. They'd never spoken, but she was a standout both in and outside of class. And he had just seen her name.</p><p><em>2. Robin Smyth</em></p><p>She stood and walked toward him.</p><p>“Show me what you made.”</p><p>“Uh, right now?”</p><p>“Yes.”</p><p><em>What an odd introduction,</em> he mused as they walked in silence into the college.</p><p>Forty-five minutes later, she took a bite of the beef tenderloin he'd prepared.</p><p>“Interesting. So you’d rather emphasize the other ingredients? The butter’s creaminess really comes through.”</p><p>“Yeah, that butter’s local. I think unique ingredients like that are worth emphasizing.”</p><p>She looked at him with curiosity.</p><p>---</p><p>A few days later, Fletcher found himself walking through the college’s halls late.</p><p>Only one room had a light on. Inside stood the #2 student. She was finishing a cake, clearly exhausted. Surrounding her was a mess of dirty cookware.</p><p>He walked in.</p><p>She looked up at him. “It won’t be ready tonight. It has to set.”</p><p>“I know.” He made his way to the sink and began washing a large mixing bowl.</p><p>“What are you doing?”</p><p>“Helping you out.”</p><p>“You don’t have to do that.”</p><p>“I know.</p><p>She sighed and began to protest, but he cut her off.</p><p>“You should be honored that the #1 student is offering his help as your bus boy.”</p><p>She smirked. “#1, for now.”</p><p>“If you want to back that talk, you better get back to finishing that cake.”</p><p>“Whatever.”</p><p>They walked home together in silence. But as they began to go their separate ways, she spoke.</p><p>“Sorry for making you do all the dishes.”</p><p>“You didn’t make me.&quot;</p><p>“Well, I guess. But still, sorry about that. Must not have been fun.”</p><p>“I’d feel better if you said <em>thank you</em> instead of <em>sorry.”</em></p><p>“Oh. Well, thank you.”</p><p>“You’re welcome.”</p><p>---</p><p>A month later, the next exam came. And once again, students crowded around the bulletin board afterward.</p><p>Fletcher immediately saw two names:</p><p><em>1. Robin Smyth</em></p><p><em>2. Fletcher Moore</em></p><p><em>Damn.</em></p><p>He didn’t think he’d take it hard, but he felt himself shaking.</p><p><em>No. It doesn’t matter. I did fine. She worked hard for the spot.</em></p><p>He exited the crowd and saw her once again sitting on that same bench, staring at him.</p><p>This time he walked over to her.</p><p>“Hey, congratulations on getting first.” He smiled, then kept on walking. He could tell his eyes were betraying him.</p><p>“Want me to show you what I made?”</p><p>He stopped.</p><p><em>Is she trying to brag?</em></p><p>He looked into her eyes. He didn’t see any sign of disrespect. <em>Is this her way of offering support?</em></p><p>He didn’t want to care. But, she knew he did.</p><p>“Thank you.”</p><p>---</p><p>After that, they began practicing together in the evenings.</p><p>They watched their souffles deflate together.</p><p>They spent too long caramelizing onions together.</p><p>They made whipped cream together — hers always overwhipped and his always underwhipped.</p><p>They talked about this and that, everything and nothing as the semester went by.</p><p>---</p><p>Eventually, they moved their late night cooking to their own apartments. One night, the topic of pancakes came up at Fletcher’s.</p><p>Robin rolled her eyes. “Pancakes are such a bleh food.”</p><p>“Hey now, I think they’re a great comfort food.”</p><p>“Yeah if you’re sad and alone at a McDonalds.”</p><p>He laughed. “I can make a sophisticated pancake breakfast! It’s mostly about what you put on them.”</p><p>“Okay, make me some then.”</p><p>“It’s 8 p.m. That’s not pancake time.”</p><p>“Really? It could be a dessert.”</p><p>“Pancakes truly shine as an early morning treat. Like, breakfast in bed type of thing. Asking them to fill the role of a fancy evening dessert is setting them up for failure.”</p><p>He could tell she disagreed from her frown.</p><p>“How about you come over tomorrow morning and I’ll make you some then.”</p><p>She smiled. “Okay, does… 6 a.m. work?”</p><p>He raised his eyes at her. “I’m not getting up that early, sorry.”</p><p>She took a step toward him.</p><p><em>Why did my heart just skip a beat?</em></p><p>“What if I wake you up myself?”</p><p><em>She can’t have meant that in the way I’m taking it, right?</em></p><p>He stared into her eyes. Then subconsciously dropped his gaze to her lips. She had a small tense smile. Was she nervous?</p><p>Was he nervous? He certainly felt warm.</p><p>He looked up. Her eyes were gazing at his own lips now.</p><p>They both stood there in silence for an uncountable moment.</p><p>He tried to speak. His voice came out airy.</p><p>“What do you mean by that?”</p><p>She closed the half step between them and ran her hand through his hair. And her lips were on his.</p><p>And his were on hers.</p><p>And then his hands were on her back, and then her front.</p><p>And soon she was on top of him in his bed.</p><p>And much later they fell asleep together.</p><p>---</p><p>Robin woke to the smell of pancakes.</p><p>She rubbed her eyes and sat up in bed. The light from the window shone on her face. She couldn’t believe she had woken up so late. But then she thought about their late night, and decided she could in fact believe it.</p><p>Downstairs she found the #2 student drizzling honey upon a fluffy pancake.</p><p>His green eyes sparkled as he noticed her. He scooped a finger of honey off the plate and put it in his mouth.</p><p>“So the secret is the honey. It’s hyperlocal honey made from a single hive surrounded by maple trees. You can truly taste—”</p><p>She kissed him. And yes, she could taste the maple.</p><p>“It’s delicious. Thank you.”</p></article></main><footer><p><a aria-label="Developer for this website" href="." target="_blank"></a></p></footer><script type="module" src="/stories/dist/Fq9wCXhG-6.js"></script></body></html>

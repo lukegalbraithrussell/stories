@@ -1,0 +1,319 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><script>(function() {var savedMode = localStorage.getItem('preferredMode');if (savedMode === 'dark' || (!savedMode && window.matchMedia('(prefers-color-scheme:dark)').matches)) {document.documentElement.classList.add('dark-mode');}document.documentElement.style.visibility = 'hidden';})();</script><title>Name five things you can see</title><meta content="Name five things you can see" property="og:title"><meta content="Name five things you can see" name="twitter:title"><meta content="Name five things you can see" name="title"><meta content="Name five things you can see" property="og:site_name"><meta content="" name="description"><meta content="" property="facebook:description"><meta content="" property="og:description"><meta content="" name="twitter:description"><meta property="twitter:card" content="summary_large_image"><meta content="" name="twitter:image"><meta content="" name="facebook:image"><meta content="" name="og:image"><link href="/stories/logos.png" rel="icon" type="image/x-icon"><link rel="apple-touch-icon" href="/stories/logos.png"><meta content="" property="facebook:author"><meta content="" property="twitter:author"><meta content="" name="twitter:site"><meta property="og:type" content="website"><link rel="canonical" href="/stories/name-five-things-you-can-see/"><link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="tiny fiction"><meta name="language" content="en"><meta name="locale" content="en_US"><meta property="og:locale" content="en_US"><meta name="generator" content="Eleventy v3.1.0"><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","description":"","headline":"tiny fiction - ","name":"tiny fiction","url":"/name-five-things-you-can-see/"}</script><style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+}
+
+body {
+    font-family: 'Cutive Mono', monospace;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+    letter-spacing: 0.01em;
+}
+
+.light-mode {
+    background-color: #fcf1de;
+    color: #000000;
+}
+
+.dark-mode {
+    background-color: #202020;
+    color: #ffffff;
+}
+
+header {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: currentColor;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+article {
+    border: 2px solid currentColor;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.meta {
+    font-size: 0.9em;
+    margin-bottom: 1rem;
+}
+
+.tags {
+    margin-top: 2rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    margin-right: 0.5rem;
+    border: 2px solid currentColor;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.navigation a {
+    padding: 0.5rem 1rem;
+    border: 2px solid currentColor;
+    text-decoration: none;
+    color: currentColor;
+    text-transform: uppercase;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.pagination a {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid currentColor;
+    text-decoration: none;
+    color: currentColor;
+}
+
+a {
+    color: currentColor;
+    font-weight: bold;
+}
+
+#mode-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.media-container {
+    margin: 2rem 0;
+    border: 3px solid currentColor;
+    padding: 1rem;
+}
+
+.media-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.media-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+}
+
+.caption {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    display: block;
+    padding-bottom: 15px;
+    font-size: 12px;
+}</style><link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet"></head><body><style>.skip-to-content{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.skip-to-content:focus{position:fixed;top:0;left:0;width:auto;height:auto;padding:10px;margin:0;overflow:visible;clip:auto;white-space:normal;background-color:#f0f0f0;color:#000;z-index:9999}.dark-mode .skip-to-content:focus{background-color:#333;color:#fff}</style><a href="#main-content" aria-label="Read Content Article" class="skip-to-content">Skip to content</a><header><nav><ul></ul></nav></header><button aria-label="dark light mode" id="mode-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightning-charge-fill" viewBox="0 0 16 16"><path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"></path><title>Dark Light Mode</title></svg></button><main aria-label="Content Article Main" id="main-content"><article><h1 id="name-five-things-you-can-see">Name five things you can see</h1><h2></h2><div class="meta"><p><span>By Luke Galbraith</span><span> | </span><span><time datetime="2023-08-04" aria-label="Publish Date">04 August 2023</time></span></p><p>Genre: Open | Action: Seeing a reflection | Word: best</p><p></p></div><hr><style>img,iframe {max-width: 100%;height: auto;}</style><p>“Couch. Mirror. Bookcase. Coffee. Dress.&quot;</p><p>Said aloud when anxious, as instructed.</p><p>He sighed and closed his eyes.</p><p>And then he felt her climb on him. Heard her tell him it was all okay. Smelled her conditioner. Tasted the lingering coffee in her mouth.</p><p>She led him to the mirror. &quot;Do you see me?&quot; Their eyes met in the reflection.</p><p>&quot;You're not a thi…”</p><p>She held him tighter still.</p><p>He sighed. &quot;I see you.&quot;</p><p>&quot;And who else do you see?&quot;</p><p>&quot;I see myself.”</p><p>&quot;And do you see us?&quot;</p><p>&quot;Of course.”</p><p>&quot;The three best things. I think we can work with that.”</p></article></main><footer><p><a aria-label="Developer for this website" href="." target="_blank"></a></p></footer><script type="module" src="/stories/dist/Fq9wCXhG-6.js"></script></body></html>

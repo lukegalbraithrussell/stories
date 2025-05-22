@@ -1,0 +1,26 @@
+
+/* THANKS */
+  Username: Creativas.dev
+  Website: https://creativas.dev
+
+  Eleventy Creator: Zachleat
+  Twitter: @zachleat
+
+
+/* Credits */
+
+  Static Site Generator: Eleventy
+  Website: https://11ty.dev
+
+  Brutalist Template: Adam DJ Brett
+  Website: adamdjbrett.com
+
+/* SITE */
+
+	Last update: Thu May 22 2025 05:59:47 GMT+0000 (Coordinated Universal Time)
+	Language: English
+  Generator: Eleventy
+  Theme: Front Cover  Theme
+  Fonts: Font-Awesome
+	Doctype: HTML5
+	IDE: Terminal, VS Code
