@@ -1,0 +1,13 @@
+---
+layout: base.njk
+---
+{%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}{%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}<article>
+<h1>{{title}}</h1>
+<h2>{{description}}</h2> 
+<div class="meta"><p><span>By {{metadata.author.name}}</span><span> | </span><span><time datetime="{{ page.date | htmlDateString }}" aria-label="Publish Date">{{ page.date | readableDate }}</time></span></p>
+<p>{{contest}}</p>
+<p>{{rules}}</p>
+{#commenteddd<p>Tags: {%- for tag in tags | filterTagList %}{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %} <a href="{{ tagUrl }}"  aria-label="Tags Name of {{tag}}">{{ tag }}</a>{%- if not loop.last %}, {% endif %}{%- endfor %}</p>#}
+</div><hr/><style>img,iframe {max-width: 100%;height: auto;}</style>{{ content | safe }}</article>
+
+
