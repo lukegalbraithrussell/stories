@@ -1,4 +1,4 @@
-# If you’d like to deploy this to GitHub pages, rename this
+# If you'd like to deploy this to GitHub pages, rename this
 # file to `gh-pages.yml` and read the mini-tutorial on
 # https://www.11ty.dev/docs/deployment/#deploy-an-eleventy-project-to-github-pages
 name: Deploy to GitHub Pages
@@ -35,7 +35,6 @@ jobs:
         with:
           path: ./.cache
           key: ${{ runner.os }}-eleventy-fetch-cache
-
 
       - run: npm ci
       - run: npm run build-ghpages
