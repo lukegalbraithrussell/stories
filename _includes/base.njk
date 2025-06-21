@@ -6,7 +6,7 @@
         <header>
             <nav>
                 <ul>{% for navs in metadata.navbar %}<li>
-                    <a href="{{navs.url}}" aria-label="Navigation Menu for {{navs.nav}}">{{navs.nav}}</a>
+                    <a href="{{ base }}{{navs.url}}" aria-label="Navigation Menu for {{navs.nav}}">{{navs.nav}}</a>
                 </li>{% endfor %}</ul>
         </nav>
     </header>
@@ -23,6 +23,6 @@
         <p>
 <a aria-label="Developer for this website" href="{{metadata.footer.text1_url}}" target="_blank">{{metadata.footer.text1}}</a>
         </p>
-    </footer>{%- js %}{% include "public/js/brutal.js" %}{% endjs %}<script type="module" src="{% getBundleFileUrl "js" %}"></script>
+    </footer>{%- js %}{% include "public/js/brutal.js" %}{% endjs %}<script type="module" src="{{ base }}{% getBundleFileUrl "js" %}"></script>
 </body>
 </html>

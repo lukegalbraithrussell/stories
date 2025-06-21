@@ -6,8 +6,9 @@ import yaml from "js-yaml";
 import pluginFilters from "./_config/filters.js";
 import htmlmin from "html-minifier-terser";
 export default async function(eleventyConfig) {
-	// Set base path for the site
-	eleventyConfig.addGlobalData("base", "/stories/");
+	// Set base path for the site dynamically
+	const BASE_PATH = process.env.ELEVENTY_BASEPATH || "";
+	eleventyConfig.addGlobalData("base", BASE_PATH);
 	
 	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
 		if(data.draft && process.env.ELEVENTY_RUN_MODE === "build") {

@@ -11,9 +11,9 @@ author:
 
 navbar:
   - nav: "Home"
-    url: "/"
+    url: "{{ base }}/"
   - nav: "Tags"
-    url: "/tags/"
+    url: "{{ base }}/tags/"
 
 # footer: 
 #  text1: repo
