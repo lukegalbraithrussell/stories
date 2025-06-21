@@ -6,6 +6,9 @@ import yaml from "js-yaml";
 import pluginFilters from "./_config/filters.js";
 import htmlmin from "html-minifier-terser";
 export default async function(eleventyConfig) {
+	// Set base path for the site
+	eleventyConfig.addGlobalData("base", "/stories/");
+	
 	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
 		if(data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
 			return false;
@@ -59,7 +62,7 @@ export default async function(eleventyConfig) {
 			language: "en",
 			title: "Short Stories",
 			subtitle: "A collection of short stories built with 11ty",
-			base: "https://lukegalbraith.com/",
+			base: "https://lukegalbraith.com/stories/",
 			author: {
 				name: "Luke"
 			}

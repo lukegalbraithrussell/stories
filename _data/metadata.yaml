@@ -3,7 +3,7 @@ language: "en"
 locale: en_US
 image: /logos.png
 favicon: /logos.png
-url: "https://lukegalbraith.com"
+url: "https://lukegalbraith.com/stories"
 #url: "http://localhost:8080"
 
 author: 
