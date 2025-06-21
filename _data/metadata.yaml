@@ -9,6 +9,12 @@ url: "https://lukegalbraith.com/stories"
 author: 
  name: "Luke Galbraith"
 
+navbar:
+  - nav: "Home"
+    url: "/"
+  - nav: "Tags"
+    url: "/tags/"
+
 # footer: 
 #  text1: repo
 #  text1_url: https://github.com/luke-russell/short-stories
