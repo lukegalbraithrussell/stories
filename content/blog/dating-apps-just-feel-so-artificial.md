@@ -1,5 +1,5 @@
 ---
-title: "Dating apps just feel so artificial"
+title: '"Dating apps just feel so artificial"'
 date: 2025-05-17
 contest: 'Genre: Sci-Fi | Action: Shuffling | Word: present'
 tags: 
